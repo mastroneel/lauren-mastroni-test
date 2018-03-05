@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+@import url("https://fonts.googleapis.com/css?family=Oswald:600");
+body {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: 'lato black';
+  src: url(../fonts/Lato-BlackItalic.ttf); }
+.row {
+  padding: 0;
+  margin: 0; }
+
+.mobile-menu .mobile-nav-bar {
+  min-height: 50px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 20; }
+  .mobile-menu .mobile-nav-bar .mobile-nav-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: inline-block;
+    width: 31px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer; }
+    .mobile-menu .mobile-nav-bar .mobile-nav-button .bar {
+      width: 100%;
+      float: left;
+      height: 4px;
+      margin-bottom: 5px;
+      background-color: #414f6b; }
+      .mobile-menu .mobile-nav-bar .mobile-nav-button .bar:last-of-type {
+        margin-bottom: 0; }
+.mobile-menu .mobile-nav {
+  height: 0;
+  z-index: 10; }
+  .mobile-menu .mobile-nav ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    transform: translate(0, -300px);
+    -ms-transform: translate(0, -300px);
+    -webkit-transform: translate(0, -300px);
+    transition: all .2s ease-in-out; }
+    .mobile-menu .mobile-nav ul li {
+      text-align: center; }
+      .mobile-menu .mobile-nav ul li a, .mobile-menu .mobile-nav ul li a:visited {
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: 'lato black', sans-serif;
+        color: #414f6b;
+        text-decoration: underline;
+        letter-spacing: 1px; }
+  .mobile-menu .mobile-nav.show-mobile-nav {
+    height: auto; }
+    .mobile-menu .mobile-nav.show-mobile-nav ul {
+      transform: translate(0px);
+      -ms-transform: translate(0px);
+      -webkit-transform: translate(0px); }
+
+.desktop-nav {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  z-index: 100; }
+  .desktop-nav .logo-text {
+    opacity: 0; }
+  .desktop-nav a, .desktop-nav a:visited {
+    text-transform: uppercase;
+    font-family: 'lato black', sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 40px;
+    letter-spacing: 1px; }
+  .desktop-nav .bg {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    opacity: 0; }
+  .desktop-nav .show {
+    opacity: 1; }
+  .desktop-nav .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+
+.sticky-nav {
+  background-color: white;
+  color: #414f6b; }
+  .sticky-nav a, .sticky-nav a:visited {
+    color: #414f6b; }
+  .sticky-nav .logo-text {
+    opacity: 1; }
+
+.hero {
+  background-image: url("../img/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center; }
+  .hero img {
+    width: 500px;
+    margin-top: 70px;
+    margin-right: -50px; }
+
+.history {
+  min-height: 100vh;
+  background-image: url("../img/01-background.png");
+  background-size: cover; }
+  .history img {
+    margin-top: 60px; }
+  .history p {
+    font-family: 'Lato', sans-serif;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 16px; }
+  .history .slider, .history .slider-mobile {
+    background-color: rgba(65, 79, 106, 0.75);
+    margin-top: 50vh;
+    padding: 0 200px 20px 200px; }
+    .history .slider .content-slider img, .history .slider-mobile .content-slider img {
+      width: 200px; }
+    .history .slider .content-slider-mobile img, .history .slider-mobile .content-slider-mobile img {
+      width: 300px; }
+    .history .slider .content-slider li, .history .slider-mobile .content-slider li {
+      text-align: center; }
+    .history .slider .content-slider-mobile li, .history .slider-mobile .content-slider-mobile li {
+      text-align: center; }
+
+.climb {
+  background-color: #fff;
+  padding: 20px;
+  text-align: left; }
+  .climb img {
+    float: right; }
+  .climb p {
+    font-family: 'Lato';
+    font-size: 16px;
+    margin-top: 80px;
+    width: 80%; }
+
+.mountain-links {
+  background-color: #414f6b;
+  padding: 10px; }
+  .mountain-links a, .mountain-links a:visited {
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline;
+    color: #b0b4be;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .mountain-links a.active {
+    background-color: #b0b4be;
+    color: #414f6b; }
+
+.schedule {
+  background-image: url("../img/schedule-background.png");
+  background-size: cover;
+  min-height: 80vh; }
+  .schedule .schedule-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 80px; }
+    .schedule .schedule-box h1 {
+      font-family: 'Oswald', sans-serif;
+      color: #414f6b;
+      text-transform: uppercase; }
+    .schedule .schedule-box table {
+      margin: 0 auto; }
+      .schedule .schedule-box table tr td {
+        padding: 10px 20px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px; }
+
+.footer {
+  background-color: #414f6b;
+  text-align: center;
+  line-height: 60px; }
+  .footer p {
+    font-family: 'lato black', sans-serif;
+    text-transform: uppercase;
+    color: #63769d;
+    font-size: 18px;
+    margin-top: 5px; }
+
+@media (max-width: 1235px) {
+  .history .slider, .history .slider-mobile {
+    padding: 0 100px 20px 100px; } }
+@media (max-width: 1025px) {
+  .history .slider, .history .slider-mobile {
+    padding: 0 20px 20px 20px; }
+  .history .slider .content-slider img {
+    width: 120px; } }
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none; }
+
+  .desktop-nav {
+    display: block; } }
+@media (max-width: 767px) {
+  .climb {
+    text-align: center; }
+    .climb img {
+      float: none; }
+    .climb p {
+      width: auto;
+      margin-top: 5px; }
+
+  .mobile-menu {
+    display: block; }
+
+  .desktop-nav {
+    display: none; } }
+@media (max-width: 690px) {
+  .hero {
+    background-image: url("../img/mobile-hero-background.png");
+    background-size: cover; } }
+@media (min-width: 586px) {
+  .history .slider {
+    display: block; }
+  .history .slider-mobile {
+    display: none; } }
+@media (max-width: 585px) {
+  .history .slider {
+    display: none; }
+  .history .slider-mobile {
+    display: block; } }
+@media (max-width: 415px) {
+  .mountain-links a {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=app.css.map */
